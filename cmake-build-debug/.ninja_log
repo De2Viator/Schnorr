@@ -1,0 +1,8 @@
+# ninja log v5
+41	1975	7366410009253705	CMakeFiles/schnorr.dir/schnorr-signature/SchnorrSignature.cpp.obj	284c76cdeb0a881
+2	221	7366434935088030	build.ninja	2b23ad4efb5743b2
+8	1539	7366434219356786	CMakeFiles/schnorr.dir/helpers/schnorr-operations/SchnorrOperations.cpp.obj	8d02c2e55fc2ab92
+8	1500	7366433960610143	CMakeFiles/schnorr.dir/main.cpp.obj	155f5381f76bc1
+16	1970	7366405588020940	CMakeFiles/schnorr.dir/helpers/math-operations/MathOperations.cpp.obj	f5811ede12f348b1
+1540	1734	7366434221272493	schnorr.exe	41c5ecace5f1a96
+12	1940	7366405587721528	CMakeFiles/schnorr.dir/schnorr-verification/SchnorrVerification.cpp.obj	d554b79f2a3f6014

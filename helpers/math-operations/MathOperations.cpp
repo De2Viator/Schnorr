@@ -1,11 +1,9 @@
-//
-// Created by Yurij on 02.05.2024.
-//
-
+#include <random>
 #include "MathOperations.h"
 number MathOperations::generateRandomNumber(number from, number to) {
-    boost::random::mt19937 gen;
-    boost::random::uniform_int_distribution<number> dist(from, to);
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<number> dist(from, to);
     return dist(gen);
 }
 

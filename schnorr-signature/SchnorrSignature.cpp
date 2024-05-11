@@ -1,7 +1,3 @@
-//
-// Created by Yurij on 05.05.2024.
-//
-
 #include "SchnorrSignature.h"
 number SchnorrSignature::generateQ() {
     return 103;
@@ -30,8 +26,7 @@ number SchnorrSignature::generateR(number k, number g, number p) {
     return MathOperations::makePowerMod(g,k,p);
 }
 number SchnorrSignature::generateE(std::string M, number r) {
-    std::string hashStr = std::to_string(generateH(M + r.str()));
-    std::cout<<"Hash:"<<hashStr<<std::endl;
+    std::string hashStr = std::to_string(generateH(M + std::to_string(r)));
     std::string firstThreeChars = hashStr.substr(0, 3);
     return std::stoull(firstThreeChars);
 }
@@ -69,18 +64,17 @@ void SchnorrSignature::signMessage() {
     number q = 0;
     number p = 0;
     number g = 0;
-    number y = 0;
     std::cout<<"P:";
     std::cin>>p;
     std::cout<<"Q:";
     std::cin>>q;
     std::cout<<"G:";
     std::cin>>g;
-    std::cout<<"Y:";
-    std::cin>>y;
     number k = generateK(q);
     number r = generateR(k,g,p);
-    std::string M = "1000";
+    std::string M;
+    std::cout<<"Enter your message:";
+    std::cin>>M;
     number e = generateE(M,r);
     std::cout<<"E:"<<e<<std::endl;
     number s = generateS(k,e,q);
@@ -103,10 +97,14 @@ void SchnorrSignature::verifyMessage() {
     std::cin>>e;
     std::cout<<"P:";
     std::cin>>p;
-    std::string M = "1000";
+    std::string M;
+    std::cout<<"Enter your message:";
+    std::cin>>M;
     number Ry = generateRy(g,y,s,e,p);
     number Ey = generateE(M,Ry);
     if(Ey == e) {
         std::cout<<"Signature is valid"<<std::endl;
+    } else {
+        std::cout<<"Signature isn't valid"<<std::endl;
     }
 }

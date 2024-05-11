@@ -1,3 +1,4 @@
+#include <iostream>
 #include "SchnorrVerification.h"
 number SchnorrVerification::generateP() {
     return 48731;

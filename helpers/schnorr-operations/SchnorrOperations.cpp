@@ -1,7 +1,3 @@
-//
-// Created by Yurij on 05.05.2024.
-//
-
 #include "SchnorrOperations.h"
 void SchnorrOperations::showOperations() {
     char operations[OPERATIONS_AMOUNT][MAX_NAME_LENGTH] = {

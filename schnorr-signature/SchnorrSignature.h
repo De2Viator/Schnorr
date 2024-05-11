@@ -1,7 +1,3 @@
-//
-// Created by Yurij on 05.05.2024.
-//
-
 #ifndef SCHNORR_SCHNORRSIGNATURE_H
 #define SCHNORR_SCHNORRSIGNATURE_H
 #include "../helpers/math-operations/MathOperations.h"
@@ -25,4 +21,4 @@ public:
     void verifyMessage();
 };
 
-#endif //SCHNORR_SCHNORRSIGNATURE_H
+#endif

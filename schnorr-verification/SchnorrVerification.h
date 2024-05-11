@@ -1,7 +1,3 @@
-//
-// Created by Yurij on 02.05.2024.
-//
-
 #ifndef SCHNORR_VERIFICATION_H
     #define SCHNORR_VERIFICATION_H
     #include "../helpers/math-operations/MathOperations.h"
@@ -23,4 +19,4 @@
         void generateKeys();
         void check();
     };
-#endif //SCHNORR_VERIFICATION_H
+#endif

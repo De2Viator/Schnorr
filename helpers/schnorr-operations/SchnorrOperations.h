@@ -1,7 +1,3 @@
-//
-// Created by Yurij on 05.05.2024.
-//
-
 #ifndef SCHNORR_SCHNORROPERATIONS_H
 #define SCHNORR_SCHNORROPERATIONS_H
 #define OPERATIONS_AMOUNT 5
@@ -21,4 +17,4 @@ public:
 };
 
 
-#endif //SCHNORR_SCHNORROPERATIONS_H
+#endif

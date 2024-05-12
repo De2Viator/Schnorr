@@ -8,12 +8,12 @@ number SchnorrVerification::generateQ() {
 }
 number SchnorrVerification::generateG(number q, number p) {
     number g = 2;
-    while ((MathOperations::makePowerMod(g, q, p) != 1) || (g < 100)) ++g;
+    while ((MathOperations::makePowerMod(g, q, p) != 1)) ++g;
     return g;
 }
 number SchnorrVerification::generateW(number q) {
-    number w = 357;
-    std::cout << "Enter your secret key:";
+    number w = 0;
+    std::cout << "Enter your secret key (w < q):";
     std::cin >> w;
     if (q < w) {
         std::cerr << "Your w is bigger than q" << std::endl;
@@ -45,9 +45,10 @@ void SchnorrVerification::generateKeys() {
     number p = generateP();
     number q = generateQ();
     number g = generateG(q, p);
+    std::cout<<"Q:"<<q<<std::endl;
+    std::cout<<"Private key:"<<std::endl;
     number w = generateW(q);
     number y = generateY(g, q, w, p);
-    std::cout<<"Private key:"<<std::endl;
     std::cout<<"W:"<<w<<std::endl;
     std::cout<<"Open key:"<<std::endl;
     std::cout<<"P:"<<p<<std::endl;

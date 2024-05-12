@@ -27,8 +27,8 @@ number SchnorrSignature::generateR(number k, number g, number p) {
 }
 number SchnorrSignature::generateE(std::string M, number r) {
     std::string hashStr = std::to_string(generateH(M + std::to_string(r)));
-    std::string firstThreeChars = hashStr.substr(0, 3);
-    return std::stoull(firstThreeChars);
+    std::string firstFiveChars = hashStr.substr(0, 5);
+    return std::stoull(firstFiveChars);
 }
 size_t SchnorrSignature::generateH(std::string M) {
     std::hash<std::string> H;

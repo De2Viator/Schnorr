@@ -40,5 +40,8 @@ void SchnorrOperations::doAction(Actions action) {
             schnorrSignature.verifyMessage();
             break;
         }
+        default: {
+            std::cerr<<"You entered wrong action"<<std::endl;
+        }
     }
 }

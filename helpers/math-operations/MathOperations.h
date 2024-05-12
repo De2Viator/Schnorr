@@ -1,6 +1,7 @@
 #ifndef SCHNORR_MATHOPERATIONS_H
 #define SCHNORR_MATHOPERATIONS_H
 #include "iostream"
+#include <random>
 typedef long long number;
 class MathOperations {
 public:

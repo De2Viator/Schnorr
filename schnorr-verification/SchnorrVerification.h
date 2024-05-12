@@ -1,7 +1,8 @@
 #ifndef SCHNORR_VERIFICATION_H
-    #define SCHNORR_VERIFICATION_H
-    #include "../helpers/math-operations/MathOperations.h"
-    #define t 8
+#define SCHNORR_VERIFICATION_H
+#include "../helpers/math-operations/MathOperations.h"
+#define t 8
+#include "iostream"
     class SchnorrVerification {
     private:
         number generateP();

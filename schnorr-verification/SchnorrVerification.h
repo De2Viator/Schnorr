@@ -1,6 +1,7 @@
 #ifndef SCHNORR_VERIFICATION_H
 #define SCHNORR_VERIFICATION_H
 #include "../helpers/math-operations/MathOperations.h"
+#include "../helpers/input-operations/InputOperations.h"
 #define t 8
 #include "iostream"
     class SchnorrVerification {

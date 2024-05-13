@@ -79,6 +79,12 @@ build CMakeFiles/schnorr.dir/helpers/schnorr-operations/SchnorrOperations.cpp.ob
   OBJECT_DIR = CMakeFiles\schnorr.dir
   OBJECT_FILE_DIR = CMakeFiles\schnorr.dir\helpers\schnorr-operations
 
+build CMakeFiles/schnorr.dir/helpers/input-operations/InputOperations.cpp.obj: CXX_COMPILER__schnorr_unscanned_Debug C$:/Users/Yurij/CLionProjects/schnorr/helpers/input-operations/InputOperations.cpp || cmake_object_order_depends_target_schnorr
+  DEP_FILE = CMakeFiles\schnorr.dir\helpers\input-operations\InputOperations.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\schnorr.dir
+  OBJECT_FILE_DIR = CMakeFiles\schnorr.dir\helpers\input-operations
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target schnorr
@@ -87,7 +93,7 @@ build CMakeFiles/schnorr.dir/helpers/schnorr-operations/SchnorrOperations.cpp.ob
 #############################################
 # Link the executable schnorr.exe
 
-build schnorr.exe: CXX_EXECUTABLE_LINKER__schnorr_Debug CMakeFiles/schnorr.dir/main.cpp.obj CMakeFiles/schnorr.dir/schnorr-verification/SchnorrVerification.cpp.obj CMakeFiles/schnorr.dir/helpers/math-operations/MathOperations.cpp.obj CMakeFiles/schnorr.dir/schnorr-signature/SchnorrSignature.cpp.obj CMakeFiles/schnorr.dir/helpers/schnorr-operations/SchnorrOperations.cpp.obj
+build schnorr.exe: CXX_EXECUTABLE_LINKER__schnorr_Debug CMakeFiles/schnorr.dir/main.cpp.obj CMakeFiles/schnorr.dir/schnorr-verification/SchnorrVerification.cpp.obj CMakeFiles/schnorr.dir/helpers/math-operations/MathOperations.cpp.obj CMakeFiles/schnorr.dir/schnorr-signature/SchnorrSignature.cpp.obj CMakeFiles/schnorr.dir/helpers/schnorr-operations/SchnorrOperations.cpp.obj CMakeFiles/schnorr.dir/helpers/input-operations/InputOperations.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\schnorr.dir

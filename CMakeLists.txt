@@ -9,4 +9,6 @@ add_executable(schnorr main.cpp
         schnorr-signature/SchnorrSignature.cpp
         schnorr-signature/SchnorrSignature.h
         helpers/schnorr-operations/SchnorrOperations.cpp
-        helpers/schnorr-operations/SchnorrOperations.h)
+        helpers/schnorr-operations/SchnorrOperations.h
+        helpers/input-operations/InputOperations.cpp
+        helpers/input-operations/InputOperations.h)

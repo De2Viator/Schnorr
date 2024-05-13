@@ -1,6 +1,7 @@
 #ifndef SCHNORR_SCHNORRSIGNATURE_H
 #define SCHNORR_SCHNORRSIGNATURE_H
 #include "../helpers/math-operations/MathOperations.h"
+#include "../helpers/input-operations/InputOperations.h"
 #include "iostream"
 class SchnorrSignature {
     number generateQ();
